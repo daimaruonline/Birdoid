@@ -4,13 +4,13 @@ using System.Collections;
 public class Manager : MonoBehaviour
 {
 
-		public GameObject birdoid;
+		public Birdoid birdoid;
 
 		// Use this for initialization
 		void Start ()
 		{
 
-				Birdoid _bird = (Birdoid)Instantiate (birdoid, birdoid.transform.position, birdoid.transform.rotation);
+				Birdoid _bird = Instantiate (birdoid, birdoid.transform.position, birdoid.transform.rotation);
 				_bird.direction = new Vector2 (-0.1f, 0.1f);
 				_bird.speed = 0.05f;
 	
